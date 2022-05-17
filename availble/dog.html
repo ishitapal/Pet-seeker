@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/b5fab5eb97.js" crossorigin="anonymous"></script>
+
+   <style>
+      *{
+    margin: 0px;
+    padding: 0px;
+   }
+   body{
+   
+    font-family: arial;
+   }
+.nav-bar{
+  height:100px;
+}
+.sidebar{
+  position: fixed;
+  width: 50%;
+  left: -50%;
+  height: 100%;
+  background: #1e1e1e;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+display: block;
+height: 65px;
+width: 100%;
+color: white;
+line-height: 65px;
+padding-left: 30px;
+box-sizing: border-box;
+border-bottom: 1px solid black;
+border-top: 1px solid rgba(255,255,255,.1);
+border-left: 5px solid transparent;
+font-family: 'Open Sans', sans-serif;
+transition: all .5s ease;
+}
+a.active,a:hover{
+border-left: 5px solid #b93632;
+color: #b93632;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 30px 40px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 650px;
+  opacity: 1;
+  visibility: visible;
+}
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+.right h1{
+    text-align: center;
+  float: left;
+  padding-top:40px;
+  margin-left:100px;
+}
+
+  .right h1{
+      text-align: center;
+    float: left;
+    padding-top:40px;
+    margin-left:100px;
+}
+
+   .main{
+margin-top:5%;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+   
+   .card{
+        width:20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+       }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+    }
+   
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     
+    }
+   
+   h1{
+     font-size: 20px;
+    }
+   
+   .des{
+     padding: 3px;
+     text-align: center;
+     padding-top: 11px;
+           border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+   button{
+     margin-top: 40px;
+     margin-bottom: 10px;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 5px;
+     padding:10px;
+   }
+   button:hover{
+     background-color: black;
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+   .back{
+  text-align: center;
+  border-radius: 20%;;
+  background-color:#1b1b1b; 
+  color:white;
+  display: inline-block;
+  margin-top:3%;
+  margin-left:43%;
+  margin-bottom: 5%;
+}
+.back a{
+  text-decoration: none;
+  background-color:#1b1b1b; 
+  color:white;
+  padding: 8px 13px;
+}
+/* *********Footarea*********88 */
+.footarea{
+  background:#1b1b1b; 
+  color: lightgray;
+  height:30%;
+}
+.social{
+  text-align: center;
+  padding-top: 3%;
+}
+.copy{
+  text-align: center;
+  padding-bottom: 3%;
+}
+   </style>
+   <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+<body>
+   <header id="header">
+      <nav class="nav-bar">
+  <div class="mainside">
+          <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header>My Menu</header>
+    <a href="../home.html"> 
+      <i class="fas fa-home"></i> <span>HOME</span>
+    </a>
+    <a href="../about1.html">
+      <i class="fas fa-book"></i>
+      <span>About Pet Adoption</span>
+    </a>
+    <a href="/Form/Application Form.html">
+      <i class="fas fa-file-signature"></i>
+      <span>APPLICATION FORM</span>
+    </a>
+    <a href="../care.html">
+      <i class="fas fa-paw"></i>
+      <span>Pet Care</span>
+    </a>
+
+    <a href="../1st.html">
+      <i class="far fa-question-circle"></i>
+      <span>About Us</span>
+    </a>
+    <a href="#contact">
+      <i class="far fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </div>
+  </div>
+  <div class="right">
+      <h1 class="name">PET SEEKER</h1>
+  </div>
+  
+</nav></header>
+
+   <div class="main">
+      <div class="card">
+   
+         <div class="image">
+         <img src="spitz.jpg">
+         </div>
+         <div class="title">
+          <h1>Indian spitz</h1>
+         </div>
+         <div class="des">
+          <p>
+            <b>Lifespan: </b>12–15 years<br><br>
+            <b> Colors: </b>White, Black, Brown<br><br>
+            <b>Temperament: </b>Intelligent, Playful, Kind, Athletic, Active, Vocal
+          </p>
+         <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+         </div>
+         </div>
+         <!-- cards -->
+   <div class="card">
+         <div class="image">
+         <img src="labrador.jpg">
+         </div>
+         <div class="title">
+          <h1>Labrador Retriever</h1>
+         </div>
+         <div class="des">
+         <p>
+            <b>Lifespan: </b>10–12 years<br><br>
+            <b> Colors:</b>Black,chocolate,Yellow<br><br>
+            <b>Temperament: </b> Intelligent, Outgoing, Even Tempered, Kind, Agile, Trusting, Gentle
+         </p>
+            <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+         </div>
+         </div>
+         <!-- cards -->
+         <div class="card">
+     
+            <div class="image">
+          <img src="afgan.jfif">
+          </div>
+            <div class="title">
+             <h1>Afgan Hound</h1>
+            </div>
+            <div class="des">
+             <p>
+                <b>Life expectancy:</b> 12 – 14 years<br>
+              <b>Colors:Colors: Black, Cream, Red</b><br><br>
+               <b> Temperament: </b>Aloof, Dignified, Clownish, Happy, Independent
+          
+             </p>
+          <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+            </div>
+            </div>
+         <!-- cards -->
+          <!--cards -->
+     
+     
+     <div class="card">
+     
+      <div class="image">
+    <img src="dalmation.jfif">
+    </div>
+      <div class="title">
+       <h1>Dalmation</h1>
+      </div>
+      <div class="des">
+       <p>
+          <b>Life span:</b> 10 – 13 years<br><br>
+          <b>Colors:</b>  White with black spots, Black & White<br>
+          <b>Temperament:</b> Outgoing, Friendly, Energetic, Intelligent, Sensitive, Playful, Active
+    
+       </p>
+    <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+      </div>
+      </div>
+      <!-- cards -->
+         <div class="card">
+         
+            <div class="image">
+               <img src="images.jfif">
+            </div>
+            <div class="title">
+               <h1>German Shepherd</h1>
+            </div>
+            <div class="des">
+            <p>
+            <b>Lifespan: </b>9–12 years<br><br>
+            <b> Colors: </b> Black, Black & Silver, Black & Tan, Sable, Grey, Red & black<br>
+          <b>  Temperament:</b> Intelligent, Stubborn, Loyal, Alert, Obedient, Curious, Confident, Courageous, Watchfu
+   
+            </p>
+               <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+            </div>
+             </div>
+      <!--cards -->
+      <div class="card">
+         
+         <div class="image">
+         <img src="beagle.jpeg">
+         </div>
+         <div class="title">
+          <h1>Beagle</h1>
+         </div>
+         <div class="des">
+            <b>Lifespan: </b>12-15 years<br>
+            <b>Colors:</b> Lemon & White, Tri-color, White & Tan, Chocolate Tri, White & Chocolate, Orange & White, Red & White
+      <b>Temperament: </b>Amiable, Intelligent, Even Tempered, Determined, Excitable, Gentle
+   
+         </p>
+            <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+         </div>
+         </div>
+     
+     <div class="card">
+     
+     <div class="image">
+   <img src="dachshud.jfif">
+     </div>
+     <div class="title">
+      <h1>Dachshund</h1>
+     </div>
+     <div class="des">
+      <p>
+         <b>Life span:</b> 12 – 16 years<br>
+         <b>Colors:</b> Black, Black & Tan, Chocolate & Tan, Blue & Tan, Chocolate & Cream, Cream, Tan, Red<br>
+      <b>Temperament: </b>Clever, Playful, Stubborn, Devoted, Lively, Independent, Courageous
+      </p>
+      <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+   
+     </div>
+     </div>
+     <!--cards -->
+     
+     
+     <div class="card">
+     
+     <div class="image">
+   <img src="tibetian.jfif">
+   </div>
+     <div class="title">
+      <h1>Tibetan Mastiff</h1>
+     </div>
+     <div class="des">
+      <p>
+        <b> Life span:</b>: 12 – 15 years<br>
+         <b>Colors: </b>Black, Black & Tan, Brown & Tan, Brown, Red Gold, Blue Gray<br><br>
+         <b>Temperament:</b> Stubborn, Tenacious, Aloof, Strong Willed, Intelligent, Protective<br>
+   
+      </p>
+   <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+     </div>
+     </div>
+     
+   
+     <!--cards -->
+     
+     
+     <div class="card">
+     
+     <div class="image">
+   <img src="english.jfif">
+   </div>
+     <div class="title">
+      <h1>English Mastiff</h1>
+     </div>
+     <div class="des">
+      <p>
+         <b>Lifespan:</b>6-12 years<br>
+         <b>Temperament:</b> Good-natured, Affectionate, Dignified, Protective, Courageous, Calm<br>
+         <b>Colors:</b> Brindle, Fawn, Apricot</p>
+   <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+     </div>
+     </div>
+     <!--  -->
+     <div class="card">
+   
+      <div class="image">
+      <img src="spitz.jpg">
+      </div>
+      <div class="title">
+       <h1>Indian spitz</h1>
+      </div>
+      <div class="des">
+       <p>
+         <b>Lifespan: </b>12–15 years<br>
+         <b> Colors: </b>White, Black, Brown<br>
+         <b>Temperament: </b>Intelligent, Playful, Kind, Athletic, Active, Vocal
+       </p>
+      <button><a href="../form/Application Form.html">APPLY NOW</a></button>
+      </div>
+      </div>  
+   </div>
+</div>
+<div class="back">
+  <h4><a href="#header">BACK TO TOP</a></h4>
+</div>
+<footer id="contact" class="footarea">
+<div class="social">
+<i class="fab fa-instagram fa-3x"></i>
+<i class="fab fa-facebook-square fa-3x"></i>
+<i class="fab fa-twitter fa-3x"></i>
+</div>
+
+<div class="copy">
+Pet seeker &copy; 2020. All rights Reserved.
+</div>
+</footer>
+  </body>
+  </html>
+  
