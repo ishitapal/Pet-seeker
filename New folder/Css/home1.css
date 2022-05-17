@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Slackey&display=swap');
+
+/* ********HEADER*********** */
+*,
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  padding:0;
+  margin:0;
+  background-color: #fffae8;
+  box-sizing: border-box;
+}
+.header{
+    background-image: url("../img/MAIN.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height:500px;
+}
+.logo img{
+  float:left;
+	height:80px;
+	margin-top:10px;
+	margin-left:20px;
+	width:80px;
+}
+.font{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: white;
+  margin-left:83px;
+}
+
+.list{
+  float: right;
+  padding-top: 2rem;
+  width: 50%;
+  font-size: 31px;}
+
+.site-name{
+    padding:2rem;
+    float:left;
+
+}
+.items{
+    font-size:large;
+    list-style: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 0.7em;
+}
+.items a{
+    text-decoration:none;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent;
+     transition: 0.6s ease;
+}
+.items a:hover{
+  background-color: wheat;
+  border:1px solid black;
+  padding:4px;
+}
+
+.items a:active,a:visited{
+  color: #0d2c40;
+}
+.empty{
+    clear:both
+}
+/* ********************IMAGE******************************** */
+.quote{
+  float:left;
+  justify-content:space-around
+}
+.quote{
+  margin-left:11%;
+ 
+}
+.space{
+  font-size: 47px;
+  margin-top: 17%;
+  text-align: center;
+}
+.text{
+  color:white;
+  font-family: 'Sedgwick Ave', cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size:12px;
+}
+.btn{
+  border:4px solid black;
+  display:inline;
+  font-size:20px;
+  padding: 0 10px;
+  background-color:navy;
+}
+.btn a{
+  text-decoration:none;
+  color:whitesmoke;
+}
+/* ************************************************************** */
+.back-color{
+  background-color: #fffae8;
+}
+.animal{
+  text-align: center;
+  padding:2%;
+}
+.color{
+  margin-top:-2%;
+}
+.categories{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.link{
+  width:20%;
+}
+figure{
+  height:100%;
+  width:100%;
+  position: relative;
+  border-radius:20%;
+  overflow:hidden;
+  padding:98px 0;
+}
+figcaption{
+  height:300px;
+  width:100%;
+  position: relative;
+}
+.iji{
+  border: 1px solid black;
+  background-color: #fffae8;
+  padding:2px;
+}
+.iji a:hover{
+  background: white;
+  text-decoration:none;
+}
+img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+figure:hover img{
+ filter:blur(2px);
+
+}
+figure:after{
+  content:"";
+  position: absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 50%;
+
+}
+figure:nth-child(1):after{
+  background: linear-gradient(
+      to right,
+      #00dbde,
+      #fc00ff
+  );
+}
+
+figure:hover:after{
+  opacity: 0.6;
+}
+figcaption{
+  color: blanchedalmond;
+  width:80%;
+  margin-left:10%;
+  z-index:3;
+  position: absolute;
+  padding:20px 0;
+  text-align: center;
+  border-bottom:3px solid white;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+figcaption p{
+ font-size:14px;
+ font-weight: 300;
+ margin:-30%;
+}
+figure:hover figcaption{
+ transform: translateY(0);
+ opacity: 1;
+}
+/*  */
+.forum{
+  background:url("../img/SL-100420-36140-29.jpg");
+  background-repeat: repeat-y;
+  margin-top:3%;
+  background-position: center;
+  background-size: cover;
+  display:flex;
+
+  justify-content:space-around;
+
+}
+.numeric{
+  font-size:50px;
+  text-align:center;
+  font-weight: bold;
+  margin:40px 0px;
+   color:#2e0152;
+}
+
+
+.span{
+  font-size: 40px;
+  font-weight:bold;
+  color:#2e0152;
+}
+
+/* application............................... */
+.application{
+  margin:5%;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: maroon;
+  height: 20%;
+}
+.choose{
+  font-size: xx-large;
+  color:rgb(54, 167, 101);
+  padding: 2% 4%;
+  text-shadow: 1px 1px black;
+}
+.form{
+  border: 5px solid white;
+  padding: 0px 5px;
+  margin-top: 2%;
+  margin-right: 6%;
+  font-size: 25px;
+}
+.form p a{
+  text-decoration:none;
+  color: cadetblue
+}
+.form a:hover{
+  color: thistle;
+  background-color: white;
+}
+/*  */
+section{
+  background-color: #7777;
+ 
+}
+.heading{
+  display: block;
+  text-align: center;
+  padding-top: 5%;
+  font-size:72px;
+  font-weight: bold;
+}
+.heading1{
+  font-family: 'Caveat', cursive;
+  font-size:25px;
+  display: block;
+  text-align: center;
+}
+.process{
+  margin:5%;
+  /* background-color:#7777; */
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.common{
+  width:24%;
+  border-radius:50%;;
+
+}
+.back{
+  text-align: center;
+  border-radius: 20%;;
+  background-color:#0d2c40;
+  color:white;
+  display: inline-block;
+  margin-left:43%;
+  margin-bottom: 5%;
+}
+.back a{
+  text-decoration: none;
+  background-color:#0d2c40;
+  color:white;
+  padding: 8px 13px;
+}
+/* *********Footarea*********88 */
+.footarea{
+  background:url('../img/MAIN.jpg');
+  color: lightgray;
+  height:30%;
+}
+.social{
+  text-align: center;
+  padding-top: 3%;
+}
+.copy{
+  text-align: center;
+  padding-bottom: 3%;
+}

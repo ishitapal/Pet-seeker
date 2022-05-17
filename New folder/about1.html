@@ -1,0 +1,302 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/b5fab5eb97.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+             background:grey;
+            
+             /* background-color:  #0d2c40;; */
+        }
+        .name{
+            color: whitesmoke;
+        }
+        .nav-bar{
+  height:150px;
+}
+.sidebar{
+  position: fixed;
+  width: 50%;
+  left: -50%;
+  height: 100%;
+  background: #1e1e1e;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+display: block;
+height: 65px;
+width: 100%;
+color: white;
+line-height: 65px;
+padding-left: 30px;
+box-sizing: border-box;
+border-bottom: 1px solid black;
+border-top: 1px solid rgba(255,255,255,.1);
+border-left: 5px solid transparent;
+font-family: 'Open Sans', sans-serif;
+transition: all .5s ease;
+}
+a.active,a:hover{
+border-left: 5px solid #b93632;
+color: #b93632;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 30px 40px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 650px;
+  opacity: 1;
+  visibility: visible;
+}
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+.right h1{
+    text-align: center;
+  float: left;
+  padding-top:40px;
+  margin-left:100px;
+}
+
+  .right h1{
+      text-align: center;
+    float: left;
+    padding-top:40px;
+    margin-left:100px;
+}
+        .heading{
+            background-color: red;
+            color:white;
+            text-align: left;
+            display: inline-block;
+
+            width:25%;
+        }
+        .intro{
+            padding:5%;
+            margin:10%;
+            width:60%;
+            color:white;
+            float: left;
+            background-color: skyblue;
+        }
+        .image{
+            float:right;
+            width:24%;
+            margin-top:-58%;
+            height:431px;
+            border:1px solid green;
+        }
+        .image img{
+            width:100%;
+            height:100%;
+        }
+        .myths{
+            float:left;
+            width:60%;
+        }
+        .explanation{
+            background:rgba(255,255,255,0.9);
+        
+        }
+        .requirements{
+            background:rgba(234,46,73,0.9);
+            color:white;
+            float: left;
+        margin-left: -2%;
+        margin-top: 25%;
+        width: 41%;
+        }
+        .complain{
+            float: right;
+            background:rgba(246,247,146,0.9);
+            box-shadow: white;
+            width: 35%;
+            margin-top: 7%;
+        }
+ 
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+    <div class="mainside">
+            <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>My Menu</header>
+      <a href="home.html"> 
+        <i class="fas fa-home"></i> <span>HOME</span>
+      </a>
+      <a href="about1.html">
+        <i class="fas fa-book"></i>
+        <span>About Pet Adoption</span>
+      </a>
+      <a href="/Form/Application Form.html">
+        <i class="fas fa-file-signature"></i>
+        <span>APPLICATION FORM</span>
+      </a>
+      <a href="care.html">
+        <i class="fas fa-paw"></i>
+        <span>Pet Care</span>
+      </a>
+
+      <a href="1st.html">
+        <i class="far fa-question-circle"></i>
+        <span>About Us</span>
+      </a>
+      <a href="#">
+        <i class="far fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+    </div>
+    <div class="right">
+        <h1 class="name">PET SEEKER</h1>
+    </div>
+<div class="page-wrapper">
+
+	<section class="intro">
+		<header>
+			<h1 class="heading">About pet Adoption</h1>
+			<h2>Introduction...</h2>
+            <p>Pet adoption is the process of transferring responsibility for a pet that was previously owned by another party such as a person, shelter, or rescue organization. Common sources for adoptable pets are animal shelters and rescue groups. Some organizations give adopters ownership of the pet, while others use a guardianship model wherein the organization retains some control over the animal's future use or care.Online pet adoption sites have databases of pets being housed by thousands of animal shelters and rescue groups, and are searchable by the public.People deal with their unwanted pets in many ways. Some people have the pet euthanized (also known as putting down or putting to sleep), although many veterinarians do not consider this to be an ethical use of their resources for young and healthy animals, while others argue that euthanasia is a more humane option than leaving a pet in a cage for very long periods of time. Other people simply release the pet into the wild or otherwise abandon it, with the expectation that it will be able to take care of itself or that it will be found and adopted. More often, these pets succumb to hunger, weather, traffic, or common and treatable health problems. Some people euthanize pets because of terminal illnesses or injuries, while others even do it for common health problems that they cannot, or will not, pay to treat. More responsible owners will take the pet to a shelter, or call a rescue organization, where it will be cared for properly until a home can be found. Another method is rehoming (finding another owner).Reasons for surrendering a pet may be due to allergies, the pet-owner's death, divorce, the birth of a baby, or relocation.Homes cannot always be found, however, and euthanasia is often used for the excess animals to make room for newer pets, unless the organization has a no-kill policy. The Humane Society of the United States estimates that 2.4 million healthy, adoptable cats and dogs are euthanized each year in the US because of a lack of homes.</p>
+		</header>			
+	</section>
+    <div class="image">
+        <img src="shop/jv.jpg">
+    </div>
+
+	<div class="myths">
+		<div class="explanation">
+			<h3>5 common Myths about Pet adoption</h3>
+			<p>Myth #1: I don’t know what I’m getting
+                There may in fact be more information available about an adoptable pet than one from a breeder or pet store.Many of the pets posted on Petseeker are in foster care. Foster parents live with their charges 24-7 and can often tell you, in detail, about the pet’s personality and habits. If the pet is at a shelter, the staff or volunteers may be able to tell you what he or she is like. At the very least, you can ask the staff if the pet was an owner surrender (rather than a stray) and, if so, what the former owner said about him or her. Quite often pets are given up because the owner faced financial or housing issues (more on that later). You can also ask about the health and behavioral evaluations the pet has undergone since arriving at the shelter. In contrast, pet store owners rarely have an idea of what a pet will be like in a home.
+                <br>
+                Myth #2: I can’t find what I want at a shelter.If you can’t find the pet you’re looking for on pet seeker, don’t give up. Some shelters maintain waiting lists for specific breeds, so don’t be afraid to ask! There are also breed-specific rescues for just about every breed, and most of them post their pets on pet seeker. (pet seeker can even e-mail you when a pet that fits your criteria is posted — just click “Save this Search” at the top of your search results page.)
+                <br>
+                Myth #3: I can get a free pet, so why pay an adoption fee?According to the National Council on Pet Population Study and Policy (via the ASPCA), approximately 65% of pet parents in the U.S. get their pets for free or at low cost, and most pets are obtained from acquaintances or family members. The NCPPSP also reports that pets acquired from friends make up more than 30% of pets surrendered to shelters (read the article here). While getting a “free” pet may seem like a bargain at first, you’re then responsible for veterinary costs that shelters and rescue groups usually cover, including:
+                <ul>
+                    <li> Spaying/neutering $150-300</li>
+                    <li> Distemper vaccination $20-30 x2</li>
+                    <li>Rabies vaccination $15-25</li>
+                    <li>Heartworm test $15-35</li>
+                    <li>Flea/tick treatment $50-200</li>
+                    <li>Microchip $50 (Read more about what your adoption fee covers.)</li>
+                </ul>
+                <br>
+               Myth #4: Pets are in shelters because they didn’t make good pets
+                In fact, the main reasons pets are given up include:
+                <ol>
+                    <li>owners are moving to housing that don’t allow pets (7% dogs, 8% cats)</li>               
+                    <li>Allergies (8% cats)</li>
+                    <li>Owner having personal problems (4% dogs and cats)</li>
+                    <li>Too many or no room for litter mates (7% dogs, 17% cats)</li>
+                    <li>Owner can no longer afford the pet (5% dogs, 6% cats)</li>
+                    <li>Owner no longer has time for the pet (4% dogs)</li>
+                </ol>
+                (Read “Why Are Pets Relinquished to Shelters?”) As you can see, many of the reasons have nothing to do with the pets themselves. Working with shelter staff and volunteers can be a great way to figure out the best match for you and your home.
+                
+                Myth #5: Shelter pets have too much baggage
+                
+                Rescued pets have full histories … something that can actually be GREAT for adopters. Remember, all pets– even eight-week old puppies and kittens — have distinct personalities. Those personalities will either jive with your home and lifestyle or not.  Work with rescue group or shelter staff to find the right fit for you.
+                
+                What adoption myths have you heard, and how do you address them? Tell us here!</p></div>
+        </div>
+
+		<div class="requirements">
+            <h3> What Are The Requirements For Adopting a Pet?</h3>             
+               <p>How do I find out what an adoption group’s policies are?
+                If you’re interested in a specific pet, please reach out to the adoption group that has that pet. (You can contact the group by clicking “Contact this Organization” on the pet’s profile or by filling out our adoption questionnaire by clicking “Adopt Me” below the pet’s photo.)
+                Remember, even if your heart is set on that “one special pet” you saw with a specific group on Petfinder, check the pet lists of other groups, stop in at your local shelter, and check out our Event Calendar to meet with other rescue organizations. Bring a friend who might also be interested in adopting. You’ll become a more informed adopter and your adoption experience will be richer. Should you miss out on your “chosen one” because you don’t meet the shelter or rescue group’s adoption criteria, you are still moving forward toward finding that special forever friend.</p>
+		</div>
+
+		<div class="complain">
+<h3>			How Do I Make a Complaint About a Shelter?
+</h3>            Thanks for your interest in adopting! All of the animal shelters and rescue groups on our site undergo an application and screening process prior to being able to post their pets. They must also provide a letter of reference from their primary veterinarian. You are welcome to send any concerns regarding the groups posting on our site to pets@petfinder.com. Please be sure to include the full name, city and state of the group you are referring to.
+<br><h5>Note:</h5> Specific complaints about rescue groups included in the comments below will be deleted. Please be sure to email us any concerns.
+	</div></div>
+
+
+</body>
+</html>
