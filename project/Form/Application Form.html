@@ -1,0 +1,131 @@
+<html>
+<head>
+	<title>Pet Adoption Form</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="main">
+	<h2>Pet Adoption Application Form</h2>
+<div class="register">
+	<div class="block1">
+	<h3>Owner's Information</h3>
+		<form id="register" action="../thankyou.html" method="post">
+		<label>First Name:</label>
+		<br>
+		<input type="text" name="fname" id="name" placeholder="Enter Your First Name"required>
+		<br><br>
+		<label>Last Name:</label>
+		<br>
+		<input type="text" name="lname" id="name" placeholder="Enter Your Last Name"required>
+		<br><br>
+		<label>Age:</label>
+		<br>
+		<input type="number" name="age" id="name" placeholder="Ex:24"required>
+		<br><br>
+		<label>E-mail:</label>
+		<br>
+		<input type="text" name="email" id="name" placeholder="john@example.com"required>
+		<br><br>
+		<label> Address:</label>
+		<br>
+		<input type="text" name="address" id="name" placeholder="Enter Your Address"required>
+		<br><br>
+		<label>Phone Number(Mobile):</label>
+		<br>
+		<input type="number" name="number" id="name" placeholder="Enter Your Mobile No."required>
+		<br><br>
+		<label>I/We live in a:</label>
+		<br>
+		<input type="radio" name="family" id="single">
+		<span id="male">Single Family Home</span>
+		<br>
+		<input type="radio" name="family" id="duplex">
+		<span id="female">Duplex/Twin</span>
+		<br>
+		<input type="radio" name="family" id="condo">
+		<span id="male">Condo/Townhome</span>
+		<br>
+		<input type="radio" name="family" id="apartment">
+		<span id="male">Apartment</span>
+		<br>
+		<input type="radio" name="family" id="other">
+		<span id="other">Other</span>
+		<br><br>
+		<label>Do you have a fenced in yard?</label>
+		<br>
+		<input type="radio" name="yes" id="yes">
+		<span id="yes">Yes</span>
+		<br>
+		<input type="radio" name="no" id="no">
+		<span id="no">No</span>
+		<br><br>
+	</div>
+	
+	<div class="block2">
+		<h3>Pet's Details</h3>
+	
+	<label>Name of the Pet:</label>
+	<br>
+	<input type="text" class="question" name="name" id="name" placeholder="Name of Pet"required>
+	<br><br>
+	<label>What is the breed of your pet?</label>
+	<br>
+	<input type="text" class="question" name="breed" id="breed" placeholder="Breed of your Pet"required>
+	<br><br>
+	<label>Pet's Age:</label>
+	<br>
+	<input type="number" class="question" name="age" id="age" placeholder="ex:3"required>
+	<br><br>
+	<label>Is your pet male or female?</label>
+	<br>
+	<input type="radio" name="yes" id="yes">
+	<span id="yes">Yes</span>
+	<br>
+	<input type="radio" name="no" id="no">
+	<span id="no">No</span>
+	<br>
+	<input type="radio" name="don't know" id="don't know">
+	<span id="don't know">I Don't Know</span>
+	<br><br>
+	<label>Is Your Pet Sprayed?</label>
+	<br>
+	<input type="radio" name="yes" id="yes">
+	<span id ="yes">Yes</span>
+	<br>
+	<input type="radio" name="no" id="no">
+	<span id ="no">No</span>
+	<br><br>
+	<label>Where does the pet stay (be confined) while you are out? </label>
+	<input type="text" class="question" name="text" id="text" placeholder="Pet Stay When you are Out"required>
+	<br><br>
+	<label>How do you discipline your pets and why?(describe)</label>
+	<br>
+	<input type="text" class="question" name="text" id="text" placeholder="Enter Text Here"required>
+	<br><br>
+	<label>Do you have a regular veterinarian?</label>
+	<br>
+	<input type="radio" name="yes" id="yes">
+	<span id="yes">Yes</span>
+	<br>
+	<input type="radio" name="no" id="no">
+	<span id="no">No</span>
+	<br><br>
+	<label>Pet's Details(describe):</label>
+	<br>
+	<input type="text" class="question" name="text" id="pet's details" placeholder="Describe about your Pet"required>
+	<br><br>
+	<label>Number of hours (average) pet(s) spends alone:</label>
+	<br>
+	<input type="number" class="question" name="duration" id="number" placeholder="ex:7 hours"required>
+	<br><br>
+	</div>
+	<div class="submit-btn">
+	<input type="submit" value="Submit" name="submit" id="submit">
+</div>
+	</form>
+
+</div>
+</div>
+
+</body>
+</html>
